@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sua Primeira Venda</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#020504;color:#fff;line-height:1.5}
+:root{--green:#39ff9b;--green2:#16d77d;--dark:#07120e;--card:#0b1713}
+.container{width:min(1080px,92%);margin:auto}
+.hero{min-height:100vh;display:flex;align-items:center;text-align:center;padding:45px 0;background:radial-gradient(circle at 50% 20%,#103b2a 0,#020504 45%)}
+.badge{display:inline-block;border:1px solid #1b9d68;color:var(--green);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(38px,8vw,76px);line-height:.98;text-transform:uppercase;max-width:850px;margin:auto;font-weight:900}
+h1 span,.green{color:var(--green)}
+.subtitle{max-width:650px;margin:22px auto;color:#c7d2cd;font-size:18px}
+.btn{display:inline-block;text-decoration:none;color:#00140b;background:var(--green);font-weight:900;text-transform:uppercase;padding:17px 30px;border-radius:9px;box-shadow:0 0 25px #39ff9b55;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 35px #39ff9b88}
+.video{margin:42px auto 0;max-width:650px;aspect-ratio:16/9;border:2px solid #1d6045;border-radius:14px;background:linear-gradient(135deg,#06130e,#10251c);display:grid;place-items:center;overflow:hidden;position:relative}
+.play{width:76px;height:76px;border-radius:50%;background:#ff1744;display:grid;place-items:center;font-size:30px;padding-left:5px;box-shadow:0 0 30px #ff174466}
+.section{padding:85px 0}
+.dark{background:#050907}
+.title{text-align:center;font-size:clamp(28px,5vw,48px);text-transform:uppercase;font-weight:900}
+.title span{color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.card{background:var(--card);border:1px solid #164b36;border-radius:14px;padding:28px}
+.icon{font-size:30px;color:var(--green);margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:#aebbb5;font-size:15px}
+.dashboard{margin:45px auto 0;max-width:800px;background:#07130f;border:1px solid #1c6848;border-radius:18px;padding:18px;box-shadow:0 20px 70px #000}
+.screen{height:360px;border-radius:12px;background:linear-gradient(135deg,#10251d,#06100c);display:flex;align-items:center;justify-content:center}
+.chart{width:80%;height:170px;border-bottom:2px solid #315d49;position:relative}
+.chart:after{content:"";position:absolute;left:0;right:0;bottom:15px;height:120px;background:linear-gradient(155deg,transparent 5%,#39ff9b 6%,#39ff9b 7%,transparent 8%,transparent 22%,#39ff9b 23%,#39ff9b 24%,transparent 25%,transparent 43%,#39ff9b 44%,#39ff9b 45%,transparent 46%,transparent 63%,#39ff9b 64%,#39ff9b 65%,transparent 66%,transparent 78%,#39ff9b 79%,#39ff9b 80%,transparent 81%);opacity:.75}
+.price{text-align:center;margin:35px 0 22px}
+.price small{color:#9aa9a2}
+.price strong{display:block;font-size:52px;color:var(--green)}
+.faq{max-width:760px;margin:35px auto 0}
+details{border-bottom:1px solid #234438;padding:20px 5px}
+summary{cursor:pointer;font-weight:800;list-style:none}
+summary:after{content:"+";float:right;color:var(--green);font-size:24px}
+details[open] summary:after{content:"−"}
+details p{color:#aebbb5;padding:14px 0 0}
+footer{text-align:center;padding:35px 0;color:#718078;font-size:12px;border-top:1px solid #10241b}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.section{padding:65px 0}.video{margin-top:30px}.screen{height:250px}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+<div class="badge">MÉTODO PARA INICIANTES</div>
+<h1>SUA PRIMEIRA <span>VENDA</span></h1>
+<p class="subtitle">Aprenda um caminho simples para começar no digital, mesmo que você esteja começando do zero.</p>
+<a class="btn" href="#comprar">COMECE AGORA</a>
+<div class="video" aria-label="Área do vídeo">
+  <div class="play">▶</div>
+</div>
+</div>
+</section>
+
+<section class="section dark">
+<div class="container">
+<h2 class="title">O que você vai <span>aprender</span></h2>
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>Começar do zero</h3><p>Entenda os primeiros passos para criar sua estrutura e sair da ideia para a prática.</p></div>
+<div class="card"><div class="icon">02</div><h3>Encontrar oportunidades</h3><p>Aprenda a organizar uma oferta e apresentar seu produto para as pessoas certas.</p></div>
+<div class="card"><div class="icon">03</div><h3>Fazer sua primeira venda</h3><p>Use um processo simples para divulgar, receber pedidos e acompanhar seus resultados.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="title">Acompanhe seus <span>resultados</span></h2>
+<div class="dashboard">
+<div class="screen"><div class="chart"></div></div>
+</div>
+</div>
+</section>
+
+<section class="section dark" id="comprar">
+<div class="container" style="text-align:center">
+<h2 class="title">COMECE SUA <span>JORNADA</span></h2>
+<p class="subtitle">Tenha acesso ao conteúdo e coloque o método em prática.</p>
+<div class="price"><small>por apenas</small><strong>R$ 19,90</strong></div>
+<a class="btn" href="https://pay.kiwify.com.br/" target="_blank" rel="noopener">COMPRAR AGORA</a>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="title">PERGUNTAS <span>FREQUENTES</span></h2>
+<div class="faq">
+<details><summary>Para quem é o conteúdo?</summary><p>Para iniciantes que querem aprender os fundamentos para começar a vender pela internet.</p></details>
+<details><summary>Preciso ter experiência?</summary><p>Não. O conteúdo foi pensado para quem está começando.</p></details>
+<details><summary>Como recebo o acesso?</summary><p>Após a confirmação do pagamento, o acesso pode ser enviado pela plataforma de venda utilizada.</p></details>
+<details><summary>Posso editar este site?</summary><p>Sim. Você pode trocar textos, preço, botão, cores e inserir seu próprio link de checkout.</p></details>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Sua Primeira Venda — Todos os direitos reservados.</footer>
+</body>
+</html>
